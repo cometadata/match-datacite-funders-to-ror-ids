@@ -161,3 +161,7 @@ datacite-ror reconcile \
 - Progress saved to `ror_matches.checkpoint`
 - `--resume` continues from where it stopped
 - Checkpoint tracks processed funder names by hash
+
+## Acknowledgments
+
+Funder matching is performed via a match service running the strategy developed by [Jason Portenoy](https://github.com/h1-the-swan), a modified form of the single search match strategy developed by [Dominika Tkaczyk](https://github.com/dtkaczyk). The match service codebase is [marple](https://gitlab.com/crossref/marple).
