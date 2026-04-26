@@ -7,7 +7,7 @@ CLI tool to extract unique funder names from the DataCite public data file, matc
 ### Prerequisites
 
 - [DataCite public data file](https://support.datacite.org/docs/datacite-public-data-file)
-- A running [marple](https://gitlab.com/crossref/marple) matching service instance, indexed with the most recent ROR data instance, exposing `GET /match?task=funder&input=<name>`
+- A running [marple](https://gitlab.com/crossref/marple) matching service instance, indexed with the most recent ROR data, exposing `GET /match?task=funder&input=<name>`
 - [ROR data dump](https://ror.readme.io/docs/data-dump) (for name resolution and fundref→ROR cross-walks)
 
 ### Build
