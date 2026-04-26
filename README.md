@@ -1,6 +1,6 @@
 # match-datacite-funders-to-ror-ids
 
-CLI tool to extract unique funder names from the DataCite public data file, match them against ROR IDs via a match service, and reconcile matches back to DOI/funder records.
+CLI tool to extract unique funder names from the DataCite public data file, match them against ROR IDs via a match service, and reconcile matches back to DOI/funder records. Funder matching is performed via a match service running the strategy developed by [Jason Portenoy](https://github.com/h1-the-swan), a modified form of the single search match strategy developed by [Dominika Tkaczyk](https://github.com/dtkaczyk). The match service codebase is [marple](https://gitlab.com/crossref/marple).
 
 ## Installation
 
@@ -161,7 +161,3 @@ datacite-ror reconcile \
 - Progress saved to `ror_matches.checkpoint`
 - `--resume` continues from where it stopped
 - Checkpoint tracks processed funder names by hash
-
-## Acknowledgments
-
-Funder matching is performed via a match service running the strategy developed by [Jason Portenoy](https://github.com/h1-the-swan), a modified form of the single search match strategy developed by [Dominika Tkaczyk](https://github.com/dtkaczyk). The match service codebase is [marple](https://gitlab.com/crossref/marple).
